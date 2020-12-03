@@ -1,0 +1,79 @@
+
+$spacing: 20px;
+$size: 16px;
+$margin: 5px;
+$duration: 1.5s;
+$delay: 0.2;
+
+ul.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translate(-50%, -50%);
+
+  &.-loading {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translate(-50%, -50%);
+  background: inherit;
+  bottom: inherit;
+  right: inherit;
+  }
+
+  li {
+    display: inline-block;
+    margin: $margin;
+    height: $size;
+    width: $size;
+
+    border: 1px solid $primary;
+    border-radius: 50%;
+
+    animation: scaleUpDown $duration infinite;
+    transform: transformZ(0);
+
+    &:nth-child(1n) {
+      left: -$spacing;
+      animation-delay: 0s;
+    }
+    &:nth-child(2n) {
+      left: 0;
+      animation-delay: #{$delay}s;
+    }
+    &:nth-child(3n) {
+      left: $spacing;
+      animation-delay: #{$delay * 2}s;
+    }
+     &:nth-child(4n) {
+      left: $spacing * 2;
+      animation-delay: #{$delay * 3}s;
+    }
+  }
+}
+
+// ----------------------
+// KeyFrames
+// ----------------------
+
+
+@keyframes  scaleUpDown {
+  0%   {
+    transform: scale(0.4);
+    background: $primary;
+  }
+  50%   {
+    transform: scale(1);
+    background: inherit;
+  }
+  100% {
+    transform: scale(0.4);
+    background: $primary;
+  }
+}

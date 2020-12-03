@@ -1,0 +1,22 @@
+.flash.show {
+    opacity: 1;
+    animation: fade-right 0.5s;
+    box-shadow: 2px 3px 20px $border-color;
+}
+
+.flash.out {
+    opacity: 0;
+    display: none;
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

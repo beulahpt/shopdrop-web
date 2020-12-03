@@ -1,0 +1,13 @@
+.tooltip.bs-tooltip-top .arrow,
+.tooltip.bs-tooltip-bottom .arrow, 
+.tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow,
+.tooltip.bs-tooltip-auto[x-placement^="top"] .arrow {
+  left: 45%;
+}
+
+.tooltip.bs-tooltip-left .arrow, 
+.tooltip.bs-tooltip-right .arrow, 
+.tooltip.bs-tooltip-auto[x-placement^="left"] .arrow,
+.tooltip.bs-tooltip-auto[x-placement^="right"] .arrow  {
+  top: 45%;
+}

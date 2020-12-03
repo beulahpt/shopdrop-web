@@ -1,0 +1,69 @@
+@import "./mixins";
+
+.navbar {
+    @include shadowed;
+
+    position: relative;
+
+    &.navbar-dark {
+        background-color: theme-color("navbar-dark");
+    }
+
+    .navbar-dd-offset {
+        top: 32px;
+        right: -16px;
+        box-shadow: 0px 0px 5px $border-color;
+    }
+
+    .navbar-circle-trigger {
+        border: 1px solid;
+        padding: 5px;
+        width: 30px;
+        text-align: center;
+
+        &.active {
+            background: $primary;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    i {
+        background-color: theme-color("text-white");
+    }
+
+    .navbar__brand {
+        vertical-align: middle;
+
+        .navbar__brand--hover {
+            visibility: hidden;
+        }
+
+        &:hover {
+            .navbar__brand--hover {
+                visibility: visible;
+            }
+        }
+    }
+
+    .navbar__logo {
+        // relative to web root
+        // https://github.com/webpack-contrib/sass-loader#problems-with-url
+        background-repeat: no-repeat;
+        background-size: 90px;
+        width: 90px;
+        height: 20px;
+        margin-right: 15px;
+    }
+
+    .navbar__velocitylogo {
+        // relative to web root
+        background-repeat: no-repeat;
+        background-size: 90px;
+        width: 90px;
+        height: 20px;
+        margin-right: 28px;
+    }
+}

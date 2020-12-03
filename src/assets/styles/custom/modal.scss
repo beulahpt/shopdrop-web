@@ -1,0 +1,24 @@
+@import './mixins';
+
+.modal {
+  .modal-dialog {
+    border-radius: 0.5rem;
+    @include shadowed;
+
+    .modal-header {
+      border-bottom: 0;
+  
+      .close {
+        color: theme-color('dark-icon');
+      }
+    }
+  
+    .modal-content {
+      border-radius: 0.5rem;
+    }
+  
+    .modal-footer {
+      border-top: 0;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+
+.nav-tabs {
+  &.nav-sm {
+    .nav-item {
+      .nav-link {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+
+  &.nav-lg {
+    .nav-item {
+      .nav-link {
+        padding: 1rem 2rem !important;
+      }
+    }
+  }
+
+  a:not([href]):not(.active):hover {
+    cursor: pointer;
+    background-color: $hyper-light-gray;
+  }
+
+  a:not([href]).active:hover {
+    cursor: pointer;
+    border-bottom-color: transparent;
+  }
+
+  .nav-item.show .nav-link, .nav-link.active {
+    color: inherit;
+    background-color: $pure-white;
+    border-color: $border-gray $border-gray $pure-white;
+  }
+
+  .nav-link:focus, .nav-link:hover {
+    border-color: $light-icon-gray $light-icon-gray $border-gray;
+  }
+}
+
+.nav-pills {
+  &.nav-sm {
+    .nav-item {
+      .nav-link {
+        padding: 0.5rem 1rem !important;
+      }
+    }
+  }
+
+  &.nav-lg {
+    .nav-item {
+      .nav-link {
+        padding: 1rem 2rem !important;
+      }
+    }
+  }
+  
+  a:not([href]):not(.active):hover {
+    cursor: pointer;
+    background-color: $hyper-light-gray;
+  }
+
+  a:not([href]).active:hover {
+    cursor: pointer;
+    border-bottom-color: transparent;
+  }
+
+  .nav-item {
+    .nav-link {
+      @extend .btn;
+      &.active {
+        background: inherit !important;
+        @extend .text-primary;
+        @extend .btn-outline-primary;
+      }
+    }
+  }
+
+  .nav-link:focus, .nav-link:hover {
+    @extend .btn-outline-primary:hover;
+  }
+}

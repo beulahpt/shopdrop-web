@@ -1,0 +1,41 @@
+/**
+ * Font Definitions
+ */
+
+$verve-font-path: "./fonts" !default;
+
+@font-face {
+  font-family: 'Berthold-Akzidenz';
+  font-style: normal;
+  font-weight: 100;
+  src: url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Light.woff2') format('woff2'),
+       url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Light.woff') format('woff'),
+       url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Light.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Berthold-Akzidenz';
+  font-style: normal;
+  font-weight: normal;
+  src: url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Regular.woff2') format('woff2'),
+       url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Regular.woff') format('woff'),
+       url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Berthold-Akzidenz';
+  font-style: normal;
+  font-weight: bold;
+  src: url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Medium.woff2') format('woff2'),
+       url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Medium.woff') format('woff'),
+       url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Medium.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Berthold-Akzidenz';
+  font-style: italic;
+  font-weight: normal;
+  src: url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Italic.woff2') format('woff2'),
+       url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Italic.woff') format('woff'),
+       url($verve-font-path + '/Berthold-Akzidenz-Grotesk-BE-Italic.ttf')  format('truetype');
+}

@@ -1,0 +1,6 @@
+{
+  "errors.500": "Oops! Internal Server Error",
+  "errors.502": "Oops! Bad Gateway",
+  "errors.503": "Oops! Service Unavailable",
+  "errors.504": "Oops! Gateway Timeout"
+}

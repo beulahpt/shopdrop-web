@@ -1,0 +1,52 @@
+// HACK: Handle checkbox/radio support for showing invalid-feedback
+.form-check.is-invalid {
+    ~ .invalid-feedback {
+        display: block;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: $text-muted;
+}
+
+::-moz-placeholder {
+    color: $text-muted;
+}
+
+:-ms-input-placeholder {
+    color: $text-muted;
+}
+
+:-moz-placeholder {
+    color: $text-muted;
+}
+
+.custom-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.Select {
+    &.form-control {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+    }
+}
+
+.Select--multi {
+    .Select-value {
+        background-color: $pure-white;
+        color: #28c;
+    }
+}
+
+.Select {
+    .Select-control {
+        border: 1px solid $border-color;
+    }
+}
+
+.Select-placeholder, .Select--single > .Select-control .Select-value {
+    color: inherit;
+}

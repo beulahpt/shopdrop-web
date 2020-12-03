@@ -1,0 +1,87 @@
+.sidebar {
+    padding: 0;
+    background-color: #fff;
+    border-top: 0;
+    border-right: 0;
+    margin-top: 0;
+
+    &.sidebar-collapsed {
+        // COUPLES MENU TO SIDEBAR, NEED TO UNWIND THIS
+        .menu .menu-item {
+            min-width: auto;
+
+            i {
+                transition: 1s;
+                opacity: 0.75;
+            }
+        }
+    }
+
+    .sidebar-content {
+        flex-grow: 1;
+
+        // overflow Handled by content-wrapper-left
+        overflow: hidden;
+
+        &::-webkit-scrollbar {
+            width: 0px !important;
+            background: transparent !important;
+        }
+    }
+
+    .opaque {
+        opacity: 0;
+    }
+
+    &.sidebar-collapsed, .sidebar-collapsed {
+        max-width: 50px;
+
+        i {
+            // Margin hack due to column overflow when collapsed
+            margin-left: -5px;
+        }
+    }
+
+    .sidebar-trigger-container {
+        position: fixed;
+        bottom: 0;
+        width: 45px;
+        height: 35px;
+        background: $pure-white;
+        opacity: 0.9;
+        border-top-right-radius: 20px;
+
+        .sidebar-trigger {
+            width: auto;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-left: 8px;
+            padding-right: 0;
+            height: 36px;
+
+            i {
+                padding-top: 6px;
+                padding-left: 4px;
+            }
+
+            &.sidebar-collapsed {
+                max-width: 50px;
+                transform: rotate(180deg);
+                padding-right: 16px;
+                padding-left: 22px;
+                padding-top: 4px;
+
+                > i {
+                    padding-top: 0;
+                    padding-left: 0;
+                }
+            }
+
+            i {
+                font-size: 1.3em;
+            }
+        }
+    }
+}

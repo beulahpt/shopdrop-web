@@ -1,0 +1,2 @@
+export const SALES_FETCHED = 'SALES_FETCHED';
+export const SALE_FETCHED = 'SALE_FETCHED';

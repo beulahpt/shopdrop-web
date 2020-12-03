@@ -1,0 +1,75 @@
+// Bootstrap Overrides
+// https://getbootstrap.com/docs/4.0/getting-started/theming/
+// https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$line-height-lg: 1.5;
+$line-height-sm: 1.5;
+
+$border-width: 1px;
+$border-color: #cccccc;
+
+$border-radius: 0.25rem;
+$border-radius-lg: 0.3rem;
+$border-radius-sm: 0.2rem;
+
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$font-family-sans-serif: "Berthold-Akzidenz", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Cool light gray
+$body-bg: #e3ebef;
+
+//Corporate Black
+$body-color: #060614;
+$text-muted: #aaaaaa;
+
+// Main Color Block
+$primary: #428bca;
+$secondary: #f9f9f9;
+$success: #79D9CA;
+$info: #b8e9fb;
+$warning: #fff7c9;
+$danger: #ed939f;
+$light: #5bc0de;
+$dark: #001853;
+
+// Custom Colors
+// Need to generify and make themable
+$corp-pink: #c40ebb;
+$logo-light-blue: #1984cf;
+$pure-white: #ffffff;
+$light-blue: #e8f3fb;
+$hyper-light-gray: #f7f7f7;
+$border-gray: #e1e1e1;
+$dark-icon-gray: #6c6c6c;
+$light-icon-gray: #b0b0b0;
+
+// All custom colors should go there...
+// We can then access them via theme-colors('string-name')
+$theme-colors: (navbar-dark: #012e8d, muted-bg: #f9f9f9, bright-hover-bg: $corp-pink, bright-hover-text: #ffffff, icon-active: #54c5f2, dark-icon: $dark-icon-gray);
+
+// -------------------------
+// Component Color Overrides
+// -------------------------
+$tooltip-color: $pure-white;
+$tooltip-bg: $dark;
+$tooltip-arrow-color: $dark;
+$tooltip-opacity: 0.9;
+$progress-bar-color: $pure-white;
+$progress-bar-bg: $corp-pink;
+$footer-bg: #eee;
+
+// ----------------
+// Header Overrides
+// ----------------
+$h1-font-size: 38px;
+$h2-font-size: 25px;
+$h3-font-size: 20px;
+$h4-font-size: 18px;
+$h5-font-size: 16px;
+$h6-font-size: 12px;

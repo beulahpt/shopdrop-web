@@ -1,0 +1,29 @@
+.card {
+    height: 100%;
+}
+
+.card-header {
+    background: transparent;
+    font-weight: bold;
+    border-bottom: 0;
+}
+
+.card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-text {
+    flex: 1;
+}

@@ -1,0 +1,93 @@
+/**
+ * React Table Style overrides
+ * https://react-table.js.org/#/story/readme
+ */
+
+.ReactTable {
+    font-size: 0.8em;
+
+    .-pagination .-btn:not([disabled]):hover {
+        background: auto;
+        color: auto;
+    }
+
+    .-pagination .-btn {
+        background: auto;
+        color: auto;
+    }
+
+    //pull in actual colors from guide
+    .rt-thead .rt-th.-sort-asc, .rt-thead .rt-td.-sort-asc {
+        box-shadow: inset 0 3px 0 0 $primary !important;
+    }
+
+    //pull in actual colors from guide
+    .rt-thead .rt-th.-sort-desc, .rt-thead .rt-td.-sort-desc {
+        box-shadow: inset 0 -3px 0 0 $primary !important;
+    }
+
+    .rt-tbody {
+        overflow-x: hidden !important;
+    }
+
+    .rt-noData, .-loading.-active.loading {
+        background: transparent !important;
+        font-weight: lighter;
+        font-size: 1.2em;
+        padding: 0;
+    }
+
+    .rt-noData {
+        top: 80% !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .-loading.-active.loading {
+        top: 85% !important;
+    }
+
+    .rt-th, .rt-td, .rt-table .rt-thead .rt-tr .rt-th {
+        padding: 10px;
+    }
+
+    .-pagination {
+        .-next, .-previous {
+            .-btn:not([disabled]):hover {
+                color: inherit;
+                background-color: inherit;
+            }
+
+            .-btn {
+                @extend .btn;
+
+                @extend .btn-info;
+
+                padding: inherit !important;
+                font-size: inherit;
+
+                &:disabled {
+                    border-color: $border-gray;
+                }
+
+                &:hover {
+                    background: inherit;
+                    color: inherit;
+                }
+
+                &:disabled {
+                    background: inherit;
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .-pagination .-center {
+        flex: 2;
+    }
+
+    .rt-thead .rt-tr {
+        text-align: left !important;
+    }
+}

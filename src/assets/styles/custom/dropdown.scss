@@ -1,0 +1,55 @@
+
+.dropdown {
+  i {
+    background-color: theme-color('bg-primary');
+  }
+  
+  i.active {
+    color: theme-color('icon-active') !important
+  }
+
+  .dropdown-toggle {
+    &:focus {
+      box-shadow: none;
+    }
+
+    &.active {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  background-color: theme-color('muted-bg');
+  border: rgba(0, 0, 0, 0);
+  margin-top: 0;
+
+  // Not sure how I feel about this
+  // This should live in the implementor code if there are specific width specifications
+  min-width: 200px;
+  
+  &.dropdown-menu-right {
+    left: auto;
+    right: 0;
+  }
+  
+  .dropdown-item {
+    width: auto;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    font-weight: 100;
+
+    &.disabled {
+      cursor: default;
+    }
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    &:not(.disabled) {
+      background-color: $primary;
+      color: $pure-white;
+    }
+  }
+}

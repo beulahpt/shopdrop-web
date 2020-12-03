@@ -1,0 +1,343 @@
+.flex-0 {
+  flex: 0;
+}
+
+.dim-1 {
+  opacity: 0.8;
+}
+
+.dim .btn-link.pointer {
+  pointer-events: none !important;
+}
+body {
+    font-family: 'Nunito',sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: .5px;
+}
+.shopdrop-header {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    height: 75px;
+    transition: height 600ms;
+}
+
+.shopdrop-header-container {
+    color: #fff;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    background-color: #fff;
+}
+
+.shopdrop-header-left {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+}
+
+.shopdrop-header-right {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    text-align: right;
+}
+
+.shopdrop-header-logo { 
+	position: absolute;
+    width: 280px;
+    left: 50%;
+    margin-left: -147px;
+    bottom: 35px;
+    text-align: center;
+    background-color: white;
+    transition: margin 600ms,bottom 600ms;
+}
+.shopdrop-header-logo a {
+    color: #999 !important;
+    text-decoration: none;
+    border: 0;
+}
+
+.shopdrop-header-logo img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 280px;
+    height: 28px;
+    border: 0;
+    transition: width 600ms,height 600ms;
+}
+
+.shopdrop-header-button {
+	position: relative;
+    height: 45px;
+    margin: 0 20px 0 15px;
+    display: inline-block;
+}
+
+.shopdrop-header-button a {
+    color: #000 !important;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.shopdrop-header .fal {
+    font-size: 22px;
+    color: black;
+    padding-top: 6px;
+}
+.shopdrop-body {
+    width: 100%;
+    margin-top: 75px;
+    transition: margin 300ms;
+    overflow: scroll;
+    transition: margin 600ms;
+}
+.shopdrop-wrapper {
+  background-color: white;
+    padding-top: 10px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.shopdrop-content {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    max-width: 100%;
+	height: auto;
+	min-height: 72vh;
+}
+.shopdrop-header-right div.shopdrop-header-button {
+    text-align: right;
+}
+.shopdrop-header-button span {
+color: #000;
+    position: absolute;
+    bottom: 4px;
+    left: 1px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    padding-top: 10px;
+    line-height: 6px;
+}
+.btn-submit {
+  margin-right: 0;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #32cbcc;
+    border: 1px solid #32cbcc;
+    background-color: white;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-left: 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    line-height: 13px;
+    text-shadow: none;
+}
+.shopdrop-label {
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: rgb(51, 55, 64);
+}
+.product_image {
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(51, 55, 64);
+    cursor: pointer;
+    border-radius: 2px;
+	position: relative;
+    height: 20rem;
+}
+.file_add:hover {
+  background-color: rgb(174, 212, 251);
+    color: rgb(0, 126, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(174, 212, 251);
+    border-image: initial;
+	color: #9EA7B8;
+}
+.file_add {
+  display: flex;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1;
+    opacity: 0;
+}
+.file_upload_icon {
+  display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 11px;
+    color: rgb(158, 167, 184);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(227, 233, 243);
+    border-image: initial;
+    border-radius: 2px;
+}
+div.file_inst {
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(51, 55, 64);
+    cursor: pointer;
+    border-radius: 2px;
+}
+p.file_inst {
+  position: absolute;
+    width: 17rem;
+    margin-top: -0.3rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: rgb(255, 255, 255) !important;
+	line-height: normal;
+    color: rgb(41, 43, 44);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: none;
+    margin: 0px;
+}
+.fileinput {
+  /*display: none*/
+}
+
+.react-datepicker__input-container > input, .timepicker__display > input{
+  display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.timepicker__display {
+  border: none !important;
+}
+.comment {
+    position: relative;
+    padding: 10px 0;
+    margin: 5px 0 5px 0;
+}
+div.comment-from {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+div.comment-from a {
+    color: #666;
+}
+div.comment-from a {
+    color: #aaa;
+    text-decoration: none;
+}
+div.comment-from img {
+    width: 42px;
+    height: 42px;
+    vertical-align: top;
+    margin-right: 6px;
+    margin-bottom: 2px;
+    border-radius: 30px;
+    float: left;
+}
+div.comment-footer {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 2%;
+}
+div.comment-footer a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+div.comment-replies {
+    padding-left: 3%;
+}
+span.likecount {
+  vertical-align: text-top;
+}
+.add_comment textarea, .reply_comment textarea {
+  font-family: 'Nunito',sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border: 0;
+    border: 1px solid #aaa;
+}
+.reply_comment textarea {
+  width: 100%;
+}
+.add_comment textarea {
+  width: 100%
+}
+.reply_comment {
+  margin-left: 6%;
+  margin-top: 2%;
+}
+.add_comment, .reply_comment {
+  width: 60%
+}
+.add_comment_section {
+  margin-top: 2%;
+  width: 89%
+}
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+}

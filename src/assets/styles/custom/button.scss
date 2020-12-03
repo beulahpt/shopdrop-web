@@ -1,0 +1,46 @@
+.btn {
+    padding: 0.75rem 0.75rem !important;
+
+    // Override Dynamic text size default sizing with UX Requirements
+    &.btn-sm {
+        font-size: 0.6em;
+    }
+
+    &.btn-md {
+        font-size: 0.8em;
+    }
+
+    &.btn-lg {
+        font-size: 1em;
+    }
+
+    &.btn-icon {
+        padding: 0 !important;
+    }
+    &.btn-default {
+        background: none;
+        border: none;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: none !important;
+}
+
+.btn-light {
+    color: $pure-white !important;
+
+    &:hover {
+        background-color: darken($light, 15%);
+        border-color: darken($light, 20%);
+    }
+}
+
+.btn-dark {
+    &:hover {
+        background-color: darken($dark, 15%);
+        border-color: darken($dark, 20%);
+    }
+}

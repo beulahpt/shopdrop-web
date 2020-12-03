@@ -1,0 +1,79 @@
+// Need to move these to THEME MANAGED COLORS
+
+$menu-background: #ebf5fb;
+$menu-selected-border-color: #339cd5;
+$menu-selected-color: #000000;
+$menu-icon-color: #6d6d6d;
+
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    .menu-title {
+        margin-left: 10px;
+    }
+
+    .menu-item {
+        min-width: 220px;
+        border-left: 5px solid rgba(255, 255, 255, 0);
+
+        &.menu-selected {
+            border-left: 5px solid $menu-selected-border-color;
+        }
+
+        .header {
+            padding: 10px 10px 10px 5px;
+            border-bottom: 1px solid $border-color;
+            text-transform: uppercase;
+
+            i {
+                width: 36px;
+                text-align: center;
+                color: $menu-icon-color;
+            }
+        }
+    }
+
+    .nested-menu {
+        background-color: $menu-background;
+        border-bottom: 1px solid $border-color;
+        list-style-type: none;
+        padding-left: 0;
+        display: none;
+        overflow: hidden;
+        max-height: 0;
+
+        // transition: max-height 0.5s ease;
+
+        &.open {
+            display: block;
+            max-height: 1000px;
+        }
+
+        .nested-menu-item {
+            padding: 10px 10px 10px 15px;
+
+            &.nested-menu-selected {
+                border-left: 5px solid $menu-selected-border-color;
+                padding: 10px 0px 10px 15px;
+                color: $menu-selected-color;
+                font-weight: bold;
+                padding-left: 10px;
+
+                a {
+                    color: $body-color;
+                }
+
+                &.nested-menu-protected {
+                    border-left: 5px solid $success !important;
+
+                    i {
+                        position: absolute;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
